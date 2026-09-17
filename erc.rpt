@@ -1,0 +1,30 @@
+ERC report (2026-09-14T22:04:20, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[footprint_link_issues]: Footprint 'EC_Sense_ES1_3pin_2.54mm' not found in library 'ECGAS'
+    ; warning
+    @(54.61 mm, 77.47 mm): Symbol J1 [EC_SENSOR_ES1]
+[footprint_link_issues]: Footprint 'EC_Sense_ES1_3pin_2.54mm' not found in library 'ECGAS'
+    ; warning
+    @(54.61 mm, 139.70 mm): Symbol J2 [EC_SENSOR_ES1]
+[footprint_link_issues]: Footprint 'EC_Sense_ES1_3pin_2.54mm' not found in library 'ECGAS'
+    ; warning
+    @(54.61 mm, 201.93 mm): Symbol J3 [EC_SENSOR_ES1]
+[footprint_link_issues]: Footprint 'EC_Sense_ES1_3pin_2.54mm' not found in library 'ECGAS'
+    ; warning
+    @(54.61 mm, 264.16 mm): Symbol J4 [EC_SENSOR_ES1]
+[footprint_link_issues]: Footprint 'ADuCM355_LGA-72_6x5mm' not found in library 'ECGAS'
+    ; warning
+    @(297.18 mm, 189.23 mm): Symbol U1 [ADuCM355]
+[footprint_link_issues]: Footprint 'ADuCM355_LGA-72_6x5mm' not found in library 'ECGAS'
+    ; warning
+    @(431.80 mm, 189.23 mm): Symbol U2 [ADuCM355]
+
+ ** ERC messages: 6  Errors 0  Warnings 6
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

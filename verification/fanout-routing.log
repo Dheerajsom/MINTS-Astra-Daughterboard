@@ -1,0 +1,13 @@
+REQUEST 0 {'net': '/U2_SWDIO', 'points': [[137.0, 86.5]], 'layers': [0]} {'net': '/U2_SWDIO', 'points': [[137.044, 86.0732]], 'layers': [0, 4, 6, 2]}
+ROUTED /U2_SWDIO length 0.381 vias 0 visited 28
+REQUEST 1 {'net': '/SDA', 'points': [[137.5, 86.5]], 'layers': [0]} {'net': '/SDA', 'points': [[137.525, 86.075]], 'layers': [0, 4, 6, 2]}
+ROUTED /SDA length 0.375 vias 0 visited 16
+REQUEST 2 {'net': '/U2_SWDIO', 'points': [[137.525, 90.025]], 'layers': [4]} {'net': '/U2_SWDIO', 'points': [[137.044, 86.0732]], 'layers': [0, 4, 6, 2]}
+ROUTED /U2_SWDIO length 4.082 vias 0 visited 3669
+REQUEST 3 {'net': '/SDA', 'points': [[136.714, 85.744]], 'layers': [6]} {'net': '/SDA', 'points': [[137.525, 86.075]], 'layers': [0, 4, 6, 2]}
+ROUTED /SDA length 0.886 vias 0 visited 94
+REQUEST 4 {'net': 'AGND', 'points': [[80.0, 86.5]], 'layers': [0]} {'net': 'AGND', 'points': [[78.85, 83.825]], 'layers': [0, 4, 6, 2]}
+ROUTED AGND length 6.73 vias 1 visited 7422
+REQUEST 5 {'net': '/U1_SWDIO', 'points': [[81.0, 86.5]], 'layers': [0]} {'net': '/U1_SWDIO', 'points': [[78.6452, 86.7501]], 'layers': [0]}
+ROUTED /U1_SWDIO length 4.23 vias 0 visited 2114
+COMPLETED 6 of 6

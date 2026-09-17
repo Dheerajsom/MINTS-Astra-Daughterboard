@@ -1,0 +1,729 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T17:07:44",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "ECSense_4CH_I2C.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [AGND] on F.Cu, length 0.1412 mm",
+                    "pos": {
+                        "x": 80.7539,
+                        "y": 85.7461
+                    },
+                    "uuid": "6707af9c-7925-471d-a480-32f1b6785d60"
+                },
+                {
+                    "description": "Pad H2 [AGND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 80.0,
+                        "y": 86.5
+                    },
+                    "uuid": "217219af-10fc-49ab-8f32-f7ac90df5653"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [AGND] on F.Cu, length 0.4702 mm",
+                    "pos": {
+                        "x": 80.8951,
+                        "y": 85.7461
+                    },
+                    "uuid": "3574ee48-cf7a-41de-b1d6-c0cad9d479e8"
+                },
+                {
+                    "description": "Pad 2 [AGND] of C41 on B.Cu",
+                    "pos": {
+                        "x": 81.225,
+                        "y": 87.0
+                    },
+                    "uuid": "409b009c-547b-42d7-9efc-7896600443a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.6400 mm",
+                    "pos": {
+                        "x": 137.177,
+                        "y": 85.7367
+                    },
+                    "uuid": "e7270fad-3088-4021-bc69-e986f610f63a"
+                },
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.2290 mm",
+                    "pos": {
+                        "x": 138.389,
+                        "y": 85.2411
+                    },
+                    "uuid": "c6f7cecc-9a34-40a9-b269-cd9e8c63200f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.5952 mm",
+                    "pos": {
+                        "x": 137.225,
+                        "y": 87.0
+                    },
+                    "uuid": "ae329bd0-23e5-4f4d-870d-c5f484c5c16c"
+                },
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.6400 mm",
+                    "pos": {
+                        "x": 137.177,
+                        "y": 85.7367
+                    },
+                    "uuid": "e7270fad-3088-4021-bc69-e986f610f63a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/SDA] on In2.Cu, length 0.2499 mm",
+                    "pos": {
+                        "x": 79.451,
+                        "y": 85.8381
+                    },
+                    "uuid": "3b211a46-949e-47eb-88e9-962000b6b54c"
+                },
+                {
+                    "description": "Track [/SDA] on In2.Cu, length 0.0697 mm",
+                    "pos": {
+                        "x": 80.9706,
+                        "y": 85.6614
+                    },
+                    "uuid": "bda5c032-4051-4275-8f14-03e6de93c516"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/SDA] on F.Cu, length 0.0290 mm",
+                    "pos": {
+                        "x": 137.044,
+                        "y": 86.0732
+                    },
+                    "uuid": "53caeccd-09bf-4dd1-84af-1a1cdac008ef"
+                },
+                {
+                    "description": "Pad H5 [/SDA] of U2 on F.Cu",
+                    "pos": {
+                        "x": 137.5,
+                        "y": 86.5
+                    },
+                    "uuid": "b2c291a3-9090-44d9-a9c8-8c8e5937217c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.1952 mm",
+                    "pos": {
+                        "x": 137.082,
+                        "y": 85.6343
+                    },
+                    "uuid": "d1db6fd5-75a9-417a-9900-46c2a66057c6"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 0.3849 mm",
+                    "pos": {
+                        "x": 138.228,
+                        "y": 85.7723
+                    },
+                    "uuid": "73d8f399-6907-43c6-b70f-598bb814da8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AGND] on F.Cu, length 0.1412 mm",
+                    "pos": {
+                        "x": 80.7539,
+                        "y": 85.7461
+                    },
+                    "uuid": "6707af9c-7925-471d-a480-32f1b6785d60"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.5952 mm",
+                    "pos": {
+                        "x": 137.225,
+                        "y": 87.0
+                    },
+                    "uuid": "ae329bd0-23e5-4f4d-870d-c5f484c5c16c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.2290 mm",
+                    "pos": {
+                        "x": 138.389,
+                        "y": 85.2411
+                    },
+                    "uuid": "c6f7cecc-9a34-40a9-b269-cd9e8c63200f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [AGND] on B.Cu, length 0.6400 mm",
+                    "pos": {
+                        "x": 137.177,
+                        "y": 85.7367
+                    },
+                    "uuid": "e7270fad-3088-4021-bc69-e986f610f63a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/SDA] on In2.Cu, length 0.2499 mm",
+                    "pos": {
+                        "x": 79.451,
+                        "y": 85.8381
+                    },
+                    "uuid": "3b211a46-949e-47eb-88e9-962000b6b54c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/SDA] on In2.Cu, length 0.0697 mm",
+                    "pos": {
+                        "x": 80.9706,
+                        "y": 85.6614
+                    },
+                    "uuid": "bda5c032-4051-4275-8f14-03e6de93c516"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.3849 mm",
+                    "pos": {
+                        "x": 138.228,
+                        "y": 85.7723
+                    },
+                    "uuid": "73d8f399-6907-43c6-b70f-598bb814da8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.1952 mm",
+                    "pos": {
+                        "x": 137.082,
+                        "y": 85.6343
+                    },
+                    "uuid": "d1db6fd5-75a9-417a-9900-46c2a66057c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0335 mm)",
+            "items": [
+                {
+                    "description": "PCB text '3V3 TX RX GND' on F.Silkscreen",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 120.0
+                    },
+                    "uuid": "9ed1e94b-44af-4bb7-8c7f-63beb18a8101"
+                },
+                {
+                    "description": "Reference field of J8",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 120.0
+                    },
+                    "uuid": "c815213d-b84a-4a03-8272-a16163b0297e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of J9",
+                    "pos": {
+                        "x": 141.0,
+                        "y": 120.0
+                    },
+                    "uuid": "0d41b44e-834b-4b22-abd9-9ff8e5720b32"
+                },
+                {
+                    "description": "PCB text '3V3 TX RX GND' on F.Silkscreen",
+                    "pos": {
+                        "x": 144.8,
+                        "y": 120.0
+                    },
+                    "uuid": "6e508376-f6dd-484e-a8b3-14d99ea021df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0684 mm)",
+            "items": [
+                {
+                    "description": "PCB text '3V3 TX RX GND' on F.Silkscreen",
+                    "pos": {
+                        "x": 144.8,
+                        "y": 120.0
+                    },
+                    "uuid": "6e508376-f6dd-484e-a8b3-14d99ea021df"
+                },
+                {
+                    "description": "PCB text 'REV B / 120 x 80 mm' on F.Silkscreen",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.0
+                    },
+                    "uuid": "81a41c0f-678c-4b8d-a8cb-c87dd7658d84"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0928 mm)",
+            "items": [
+                {
+                    "description": "Reference field of J9",
+                    "pos": {
+                        "x": 141.0,
+                        "y": 120.0
+                    },
+                    "uuid": "0d41b44e-834b-4b22-abd9-9ff8e5720b32"
+                },
+                {
+                    "description": "PCB text 'REV B / 120 x 80 mm' on F.Silkscreen",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 119.0
+                    },
+                    "uuid": "81a41c0f-678c-4b8d-a8cb-c87dd7658d84"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0647 mm)",
+            "items": [
+                {
+                    "description": "Segment of D1 on F.Silkscreen",
+                    "pos": {
+                        "x": 112.76,
+                        "y": 117.56
+                    },
+                    "uuid": "1a4e698e-03b9-417d-a7a8-c38c06eee098"
+                },
+                {
+                    "description": "Reference field of D1",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 117.6
+                    },
+                    "uuid": "b01a6c9e-4204-41e3-9473-7d43eda5e57f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 91.6
+                    },
+                    "uuid": "ca23a708-67b6-421f-bdb4-65126c00c9fa"
+                },
+                {
+                    "description": "Pad 1 [AGND] of R11 on F.Cu",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 90.825
+                    },
+                    "uuid": "6677b448-c19f-49d2-98bf-066ecfd2456a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R3",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 111.6
+                    },
+                    "uuid": "094f59f8-7733-4f56-888f-01bb7bec3db2"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of R3 on F.Cu",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 110.825
+                    },
+                    "uuid": "700b9c38-fead-4586-8437-4ae15f76ab52"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R2",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 111.6
+                    },
+                    "uuid": "b2eb0589-4349-433e-a639-2c2b60ffa36c"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of R2 on F.Cu",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 110.825
+                    },
+                    "uuid": "f27aacd8-371e-45d1-b3e1-eb9f4673a152"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R1",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 111.6
+                    },
+                    "uuid": "684fdcd7-82e0-4c0a-90dd-dc879f8577fd"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of R1 on F.Cu",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 110.825
+                    },
+                    "uuid": "28cc5471-2912-482a-a775-4cf86eb3f5bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D1",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 117.6
+                    },
+                    "uuid": "b01a6c9e-4204-41e3-9473-7d43eda5e57f"
+                },
+                {
+                    "description": "Pad 2 [/SCL] of D1 on F.Cu",
+                    "pos": {
+                        "x": 111.0625,
+                        "y": 116.95
+                    },
+                    "uuid": "45af8efb-2385-432d-a9e4-a38eb872f6dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of FB1",
+                    "pos": {
+                        "x": 107.0,
+                        "y": 102.6
+                    },
+                    "uuid": "eef8ee79-bed0-47e4-bef2-cda9e93d750e"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of FB1 on F.Cu",
+                    "pos": {
+                        "x": 107.0,
+                        "y": 102.0625
+                    },
+                    "uuid": "0bb4f0ae-07a1-44eb-99d9-df201af4140e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0753 mm)",
+            "items": [
+                {
+                    "description": "Segment of JP4 on B.Silkscreen",
+                    "pos": {
+                        "x": 142.3,
+                        "y": 76.5
+                    },
+                    "uuid": "586562bb-795b-481a-8477-68de426f4baf"
+                },
+                {
+                    "description": "Reference field of JP4",
+                    "pos": {
+                        "x": 143.7,
+                        "y": 77.1
+                    },
+                    "uuid": "8d79f48d-0a31-4786-8917-bcdfc9b7fab2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 6 [/~{RESET}] of J5",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 123.0
+                    },
+                    "uuid": "2447b343-58a3-484a-b78f-73277866a130"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 5 [/~{ALERT}] of J5",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 123.0
+                    },
+                    "uuid": "426f2057-a137-4d77-853d-f98d6a5171c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 4 [/SCL] of J5",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 123.0
+                    },
+                    "uuid": "fe237834-c720-4b57-a455-2d81b8f52e9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 3 [/SDA] of J5",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 123.0
+                    },
+                    "uuid": "cb90dfd2-7288-47f1-b23c-57d32c3b6033"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 2 [GND] of J5",
+                    "pos": {
+                        "x": 107.0,
+                        "y": 123.0
+                    },
+                    "uuid": "3a710360-de84-4da0-829b-635f22a98962"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'ADuCM355 / REQUIRES FIRMWARE + CALIBRATION' on B.Silkscreen",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 122.0
+                    },
+                    "uuid": "abfdfd7c-3681-4a77-9a4b-25d85254b7f3"
+                },
+                {
+                    "description": "PTH pad 1 [VIN] of J5",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 123.0
+                    },
+                    "uuid": "2badaaf2-2970-4ecd-bc03-e65e1cddf2a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

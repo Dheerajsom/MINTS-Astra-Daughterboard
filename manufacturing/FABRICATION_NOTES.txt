@@ -1,0 +1,11 @@
+EC SENSE 4-CHANNEL I2C — REVISION B
+BOARD: 120.00 x 80.00 mm, R3 corners; 4 copper layers; nominal 1.6 mm FR-4.
+ORDER: ENIG; mask and silkscreen both sides; tent through vias.
+CAPABILITY: 0.075 mm trace/clearance; 0.20 mm finished via holes, 0.40 mm pads.
+Standard through vias only; no blind/buried vias or via-in-pad.
+Four 3.20 mm NPTH mounting holes on a 110 x 70 mm pattern.
+COPPER ORDER: F_Cu / In1_Cu / In2_Cu / B_Cu.
+Use the Edge_Cuts centerline as the outline. All plots share the KiCad origin.
+Do not mirror Gerbers. PTH and NPTH drills are separate.
+Fine-pitch LGA assembly: discuss stencil and inspection with assembler.
+See PCB_README.md in the project package for assembly and bring-up details.

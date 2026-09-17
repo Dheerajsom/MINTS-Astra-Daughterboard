@@ -1,0 +1,87 @@
+duplicate refdes: none
+T-junctions (point on wire interior): 0
+
+symbols placed: 221   distinct nets: 248
+named nets: 78
+
+no structural issues found.
+
+--- net pin counts ---
+  CH1_CAPPOT               2
+  CH1_CE                   4
+  CH1_LPF                  2
+  CH1_RC0                  2
+  CH1_RC1                  2
+  CH1_RE                   4
+  CH1_SE                   4
+  CH1_VBIAS                2
+  CH1_VZERO                2
+  CH2_CAPPOT               2
+  CH2_CE                   4
+  CH2_LPF                  2
+  CH2_RC0                  2
+  CH2_RC1                  2
+  CH2_RE                   4
+  CH2_SE                   4
+  CH2_VBIAS                2
+  CH2_VZERO                2
+  CH3_CAPPOT               2
+  CH3_CE                   4
+  CH3_LPF                  2
+  CH3_RC0                  2
+  CH3_RC1                  2
+  CH3_RE                   4
+  CH3_SE                   4
+  CH3_VBIAS                2
+  CH3_VZERO                2
+  CH4_CAPPOT               2
+  CH4_CE                   4
+  CH4_LPF                  2
+  CH4_RC0                  2
+  CH4_RC1                  2
+  CH4_RE                   4
+  CH4_SE                   4
+  CH4_VBIAS                2
+  CH4_VZERO                2
+  SCL                      7
+  SDA                      7
+  U1_ADCVBIAS              2
+  U1_ADDR                  2
+  U1_AVDD_REG              2
+  U1_BM                    2
+  U1_DVDD_REG              2
+  U1_DVDD_REG_AD           2
+  U1_RCAL0                 2
+  U1_RCAL1                 2
+  U1_RX                    2
+  U1_SWCLK                 2
+  U1_SWDIO                 2
+  U1_TX                    2
+  U1_VDCDC_CAP1N           2
+  U1_VDCDC_CAP1P           2
+  U1_VDCDC_CAP2N           2
+  U1_VDCDC_CAP2P           2
+  U1_VDCDC_CAPOUT          2
+  U1_VREF182               2
+  U1_VREF25                2
+  U2_ADCVBIAS              2
+  U2_ADDR                  2
+  U2_AVDD_REG              2
+  U2_BM                    2
+  U2_DVDD_REG              2
+  U2_DVDD_REG_AD           2
+  U2_RCAL0                 2
+  U2_RCAL1                 2
+  U2_RX                    2
+  U2_SWCLK                 2
+  U2_SWDIO                 2
+  U2_TX                    2
+  U2_VDCDC_CAP1N           2
+  U2_VDCDC_CAP1P           2
+  U2_VDCDC_CAP2N           2
+  U2_VDCDC_CAP2P           2
+  U2_VDCDC_CAPOUT          2
+  U2_VREF182               2
+  U2_VREF25                2
+  ~{ALERT}                 4
+  ~{RESET}                 6

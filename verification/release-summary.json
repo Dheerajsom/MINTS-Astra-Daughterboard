@@ -1,0 +1,47 @@
+{
+  "verified_at_utc": "2026-09-17T01:38:09.230767+00:00",
+  "software": "KiCad 10.0.5",
+  "board_size_mm": [
+    120,
+    80
+  ],
+  "copper_layers": 4,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "erc_violations": 0,
+  "individual_drc_exclusions": [],
+  "ignored_check_types": [
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "NPTH inside courtyard",
+      "key": "npth_inside_courtyard"
+    }
+  ],
+  "fabrication_minimums_mm": {
+    "track_width": 0.075,
+    "clearance": 0.075,
+    "via_drill": 0.2,
+    "via_pad": 0.4
+  },
+  "limitations": [
+    "Hardware prototype; physical bench test not performed.",
+    "Application firmware and sensor calibration required."
+  ],
+  "design_sha256": {
+    "ECSense_4CH_I2C.kicad_pcb": "f798b6d6e22acd776d3b1ced93282d9df470bc2291e0095ae809e95062b2956c",
+    "ECSense_4CH_I2C.kicad_sch": "7180d2be6d4c2e8537c1bd79d78aaeceb1142c31f60c6a130ec6e59a21aa0965",
+    "ECSense_4CH_I2C.kicad_pro": "bc913f8c3411b1fbf5cb5e29fa2ff88b9e4b0af3e6456bf7d383b32e16946728"
+  }
+}

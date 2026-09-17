@@ -1,0 +1,3 @@
+./src/common/stdpbase.cpp(59): assert ""traits"" failed in Get(): create wxApp before calling this
+Footprints 109 nets 132 outline 120.05 80.05
+DSN export True

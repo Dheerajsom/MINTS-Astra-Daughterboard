@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ECGAS")(type "KiCad")(uri "${KIPRJMOD}/ECGAS.kicad_sym")(options "")(descr "Custom symbols for the 4-channel EC Sense gas sensor board"))
+)

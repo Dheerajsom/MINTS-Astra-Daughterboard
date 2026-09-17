@@ -1,0 +1,76 @@
+2026-09-16 16:52:37.797 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @954b04f (file:/Users/dheerajsomashekar/Downloads/gas-sensor-i2c-board/scripts/freerouting.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-09-16 16:52:39.300 INFO   [978BFC\8CAA11] Loading board file 'layout.dsn'...
+2026-09-16 16:52:39.368 INFO   [978BFC\8CAA11] Job '978BFC\8CAA11' started at 2026-09-16T21:52:39.368565Z.
+2026-09-16 16:52:39.468 INFO   [978BFC\8CAA11] Fanout stage started on board '0ebb968c19192a78cf94447e78741f48' with 286 of 335 SMD pins needing fanout (49 already connected, 0 netless).
+2026-09-16 16:52:41.772 INFO   [978BFC\8CAA11] Fanout pass #1 on board '6102f4dc0c4c5df25d4c8389fbaca1eb' completed in 2.26 seconds with 167 SMD pins fanouted, 119 not routed, 0 insert errors, +41 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-16 16:52:42.939 INFO   [978BFC\8CAA11] Fanout pass #2 on board '80ce4c64c7289f95a331675904dbdacd' completed in 1.16 seconds with 53 SMD pins fanouted, 127 not routed, 0 insert errors, +21 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-16 16:52:43.941 INFO   [978BFC\8CAA11] Fanout pass #3 on board '6f57856e411c2071af716d3e9fcb0330' completed in 0.99 seconds with 32 SMD pins fanouted, 116 not routed, 0 insert errors, +5 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-16 16:52:44.932 INFO   [978BFC\8CAA11] Fanout pass #4 on board '438c6aea495f14a0197dd12a8bf984ea' completed in 0.98 seconds with 24 SMD pins fanouted, 111 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-16 16:52:45.991 INFO   [978BFC\8CAA11] Fanout pass #5 on board '6442ad71f92eb6316d3c9c1572be15d6' completed in 1.05 seconds with 19 SMD pins fanouted, 114 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-16 16:52:46.991 INFO   [978BFC\8CAA11] Fanout pass #6 on board '901e70330c9a304495b61ba9694e2c73' completed in 0.99 seconds with 16 SMD pins fanouted, 114 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-09-16 16:52:47.990 INFO   [978BFC\8CAA11] Fanout pass #7 on board '20aca4779b2dea4eb46e9f47e8cbc4c5' completed in 0.99 seconds with 18 SMD pins fanouted, 112 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-09-16 16:52:48.898 INFO   [978BFC\8CAA11] Fanout pass #8 on board '1dedc80a79541c1965c6936c2a79572a' completed in 0.90 seconds with 20 SMD pins fanouted, 110 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-09-16 16:52:49.790 INFO   [978BFC\8CAA11] Fanout pass #9 on board 'a5f75f9cb2f1c38a81665bfe3bfb4455' completed in 0.88 seconds with 16 SMD pins fanouted, 114 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-09-16 16:52:50.678 INFO   [978BFC\8CAA11] Fanout pass #10 on board '3cd17734377e51af491e86a03cbfac99' completed in 0.88 seconds with 18 SMD pins fanouted, 113 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=1000).
+2026-09-16 16:52:51.579 INFO   [978BFC\8CAA11] Fanout pass #11 on board '537a0d18113ea0dc8f10398e319b9256' completed in 0.89 seconds with 17 SMD pins fanouted, 112 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-09-16 16:52:52.504 INFO   [978BFC\8CAA11] Fanout pass #12 on board 'e276bcdc21dee5cf7b02013764607b3c' completed in 0.92 seconds with 20 SMD pins fanouted, 110 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1200).
+2026-09-16 16:52:53.456 INFO   [978BFC\8CAA11] Fanout pass #13 on board '1182b6ef4d7aac1455265ad46ac615b7' completed in 0.94 seconds with 17 SMD pins fanouted, 113 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1300).
+2026-09-16 16:52:54.467 INFO   [978BFC\8CAA11] Fanout pass #14 on board '3676e179dd6fe01bfe8b1322099cc5c4' completed in 1.00 seconds with 17 SMD pins fanouted, 113 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1400).
+2026-09-16 16:52:55.449 INFO   [978BFC\8CAA11] Fanout pass #15 on board 'c0743fd75aee96de2afb0ccb2d14cab0' completed in 0.97 seconds with 17 SMD pins fanouted, 113 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1500).
+2026-09-16 16:52:56.570 INFO   [978BFC\8CAA11] Fanout pass #16 on board '44c577dbea47fdb513f571fc1868d913' completed in 1.11 seconds with 18 SMD pins fanouted, 114 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1600).
+2026-09-16 16:52:57.582 INFO   [978BFC\8CAA11] Fanout pass #17 on board '3976a245d2a5efde088ab1fb0af6d84d' completed in 1.01 seconds with 22 SMD pins fanouted, 111 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1700).
+2026-09-16 16:52:58.524 INFO   [978BFC\8CAA11] Fanout pass #18 on board '00b255a5567ce4f4ab717996374acd92' completed in 0.93 seconds with 21 SMD pins fanouted, 112 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=1800).
+2026-09-16 16:52:59.548 INFO   [978BFC\8CAA11] Fanout pass #19 on board 'daa0bc4b18c8e17bfcea7190d168f594' completed in 1.02 seconds with 18 SMD pins fanouted, 115 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1900).
+2026-09-16 16:53:00.586 INFO   [978BFC\8CAA11] Fanout pass #20 on board '3fb5b555579e51cbad0c1b9405f179ee' completed in 1.03 seconds with 17 SMD pins fanouted, 116 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=2000).
+2026-09-16 16:53:00.601 INFO   [978BFC\8CAA11] Fanout stage completed: started with 335 total SMD pins, completed in 21.11 seconds, escaped pins: 194/335 (57.9%), using 20.70 total CPU seconds, 180.41 GB total allocated, and 1261.1 MB peak heap usage.
+2026-09-16 16:53:00.605 INFO   [978BFC\8CAA11] Auto-routing stage started on board '3fb5b555579e51cbad0c1b9405f179ee' for 129 unrouted items.
+2026-09-16 16:53:45.300 INFO   [978BFC\8CAA11] Auto-routing pass #1 on board '3fb5b555579e51cbad0c1b9405f179ee' was completed in 44.63 seconds with score 786.60 (51 unrouted and 0 violations), using 63.26 CPU seconds and the job allocated 430.34 GB of memory so far.
+2026-09-16 16:54:13.377 INFO   [978BFC\8CAA11] Auto-routing pass #2 on board 'b4b32ad6fb3788ec7c6652399649b096' was completed in 28.01 seconds with score 870.28 (31 unrouted and 0 violations), using 90.36 CPU seconds and the job allocated 600.15 GB of memory so far.
+2026-09-16 16:54:24.077 INFO   [978BFC\8CAA11] Auto-routing pass #3 on board 'a2915057183a9593847ea8c01727d178' was completed in 10.61 seconds with score 895.39 (25 unrouted and 0 violations), using 101.11 CPU seconds and the job allocated 677.53 GB of memory so far.
+2026-09-16 16:54:32.916 INFO   [978BFC\8CAA11] Auto-routing pass #4 on board '9ba13497a1a0ddb9ac1b8a28deee64d4' was completed in 8.76 seconds with score 920.49 (19 unrouted and 0 violations), using 109.94 CPU seconds and the job allocated 743.05 GB of memory so far.
+2026-09-16 16:54:41.799 INFO   [978BFC\8CAA11] Auto-routing pass #5 on board '3594563bbac8debabdf17f2bdf8785f1' was completed in 8.79 seconds with score 945.59 (13 unrouted and 0 violations), using 117.76 CPU seconds and the job allocated 804.24 GB of memory so far.
+2026-09-16 16:54:46.370 INFO   [978BFC\8CAA11] Auto-routing pass #6 on board 'c8c2ce2deea8630f28f857175b83fcad' was completed in 4.46 seconds with score 958.15 (10 unrouted and 0 violations), using 122.61 CPU seconds and the job allocated 844.39 GB of memory so far.
+2026-09-16 16:54:51.326 INFO   [978BFC\8CAA11] Auto-routing pass #7 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 4.84 seconds with score 958.15 (10 unrouted and 0 violations), using 127.49 CPU seconds and the job allocated 881.37 GB of memory so far.
+2026-09-16 16:54:56.802 INFO   [978BFC\8CAA11] Auto-routing pass #8 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 0.00 seconds with score 958.15 (10 unrouted and 0 violations), using 132.37 CPU seconds and the job allocated 921.46 GB of memory so far.
+2026-09-16 16:55:01.644 INFO   [978BFC\8CAA11] Auto-routing pass #9 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 4.79 seconds with score 958.15 (10 unrouted and 0 violations), using 137.24 CPU seconds and the job allocated 960.21 GB of memory so far.
+2026-09-16 16:55:07.244 INFO   [978BFC\8CAA11] Auto-routing pass #10 on board '2da94a1f6230530344b112ddf44e7ef0' was completed in 5.49 seconds with score 953.96 (11 unrouted and 0 violations), using 143.07 CPU seconds and the job allocated 1006.79 GB of memory so far.
+2026-09-16 16:55:12.987 INFO   [978BFC\8CAA11] Auto-routing pass #11 on board '370c15be55de5bfdc02e5ffa5000a5ce' was completed in 5.59 seconds with score 958.15 (10 unrouted and 0 violations), using 148.93 CPU seconds and the job allocated 1057.15 GB of memory so far.
+2026-09-16 16:55:18.521 INFO   [978BFC\8CAA11] Auto-routing pass #12 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 0.00 seconds with score 958.15 (10 unrouted and 0 violations), using 153.81 CPU seconds and the job allocated 1093.35 GB of memory so far.
+2026-09-16 16:55:23.473 INFO   [978BFC\8CAA11] Auto-routing pass #13 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 4.90 seconds with score 958.15 (10 unrouted and 0 violations), using 158.69 CPU seconds and the job allocated 1132.83 GB of memory so far.
+2026-09-16 16:55:29.632 INFO   [978BFC\8CAA11] Auto-routing pass #14 on board '209834ff512986de7f9faf6243e934de' was completed in 6.05 seconds with score 953.96 (11 unrouted and 0 violations), using 164.55 CPU seconds and the job allocated 1179.56 GB of memory so far.
+2026-09-16 16:55:35.071 INFO   [978BFC\8CAA11] Auto-routing pass #15 on board 'f5314f84261a7b6c56ddcac986310b6e' was completed in 5.33 seconds with score 958.15 (10 unrouted and 0 violations), using 169.43 CPU seconds and the job allocated 1220.51 GB of memory so far.
+2026-09-16 16:55:43.365 INFO   [978BFC\8CAA11] Auto-routing pass #16 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 0.00 seconds with score 958.15 (10 unrouted and 0 violations), using 178.19 CPU seconds and the job allocated 1280.66 GB of memory so far.
+2026-09-16 16:55:48.393 INFO   [978BFC\8CAA11] Auto-routing pass #17 on board '60c3548bea7780b21f4ea0a81f358af8' was completed in 4.97 seconds with score 958.15 (10 unrouted and 0 violations), using 183.06 CPU seconds and the job allocated 1319.55 GB of memory so far.
+2026-09-16 16:55:56.795 INFO   [978BFC\8CAA11] Auto-routing pass #18 on board '688c67854193da3cd373a130698ed826' was completed in 8.29 seconds with score 958.15 (10 unrouted and 0 violations), using 190.86 CPU seconds and the job allocated 1375.74 GB of memory so far.
+2026-09-16 16:55:56.807 INFO   [978BFC\8CAA11] The router's best score (958.15) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (10 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/CH1_VBIAS' (1 unrouted connection):
+    - C8-1  ->  U1-C2
+  Net '/CH1_VZERO' (1 unrouted connection):
+    - U1-B2  ->  C7-1
+  Net '/CH2_VBIAS' (1 unrouted connection):
+    - C16-1  ->  U1-C10
+  Net '/CH3_VBIAS' (1 unrouted connection):
+    - C24-1  ->  U2-C2
+  Net '/CH4_RC1' (1 unrouted connection):
+    - C29-2  ->  U2-D10
+  Net '/CH4_VZERO' (1 unrouted connection):
+    - C31-1  ->  U2-B10
+  Net '/U1_SWDIO' (1 unrouted connection):
+    - U1-H4  ->  J6-2
+  Net '/U1_VREF25' (1 unrouted connection):
+    - C39-1  ->  U1-E2
+  Net '/U2_SWDIO' (1 unrouted connection):
+    - U2-H4  ->  J7-2
+  Net 'AGND' (1 unrouted connection):
+    - U2-H2  ->  C48-2
+2026-09-16 16:55:57.017 INFO   [978BFC\8CAA11] Auto-routing stage completed: started with 239 unrouted nets, completed in 197.56 seconds, final score: 958.15 (10 unrouted and 0 violations), using 190.86 total CPU seconds, 1375.74 GB total allocated, and 1469.0 MB peak heap usage.
+2026-09-16 16:55:57.072 INFO   [978BFC\8CAA11] Optimization stage started on board '7dbf9b336c1f268a955a9a6786fd80f3' with score 953.96 (11 unrouted and 0 violations).
+2026-09-16 16:55:57.125 INFO   [978BFC\8CAA11] Stopping optimizer because the current board score (953.96) is already close to the maximum score (1000). Remaining potential improvement is less than the threshold (250.00%).
+2026-09-16 16:55:57.177 INFO   [978BFC\8CAA11] Optimization stage completed: started with score 953.96 (11 unrouted and 0 violations), completed in 0.05 seconds, final score: 953.96 (11 unrouted and 0 violations), using 0.05 total CPU seconds, 1.03 GB total allocated, and 667.8 MB peak heap usage.
+2026-09-16 16:55:57.187 INFO   [978BFC\8CAA11] Job '978BFC\8CAA11' finished with state: COMPLETED (elapsed: 3 minutes 17.82 seconds, finished at UTC: 2026-09-16T21:55:57.186878Z).
+2026-09-16 16:55:57.658 INFO   Saving output file '/Users/dheerajsomashekar/Downloads/gas-sensor-i2c-board/verification/routed.ses' (SES)...
+2026-09-16 16:55:57.663 INFO   Successfully saved output file '/Users/dheerajsomashekar/Downloads/gas-sensor-i2c-board/verification/routed.ses' (84117 bytes).

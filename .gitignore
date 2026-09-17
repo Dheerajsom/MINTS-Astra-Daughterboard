@@ -1,0 +1,16 @@
+# macOS and editor state
+.DS_Store
+._*
+*.kicad_prl
+*.lck
+*.lock
+~*
+
+# Automatic backups and local working history
+*-backups/
+.history/
+
+# Generated temporary files and Python caches
+tmp/
+__pycache__/
+*.py[cod]

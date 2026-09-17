@@ -1,0 +1,3374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/dheerajsomashekar/Downloads/gas-sensor-i2c-board/ECSense_4CH_I2C.kicad_sch</source>
+    <date>2026-09-16T20:13:43</date>
+    <tool>Eeschema 10.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>4-Channel EC Sense ES1 Gas Sensor Front End - I2C</title>
+        <company/>
+        <rev>B</rev>
+        <date>2026-09-16</date>
+        <source>ECSense_4CH_I2C.kicad_sch</source>
+        <comment number="1" value="2 x ADuCM355 dual potentiostat, 4 channels, single I2C bus"/>
+        <comment number="2" value="Sensor: EC Sense ES1 series, 3-pin C/S/R, 2.54 mm pitch"/>
+        <comment number="3" value="Rev B: datasheet pinout and decoupling corrections; see PCB_README.md"/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33f422cb-05c6-40c3-91c8-22c7e1e24dcf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc317bf0-1e16-4432-905f-b654fccd8beb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9026c81d-5f8c-4d2b-b4ab-b8dd166fccd3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Potentiostat loop compensation, CE to CAP_POT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Potentiostat loop compensation, CE to CAP_POT"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b9ebd86-5770-4c4f-b8be-a0451c54f02c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA RC filter between RCx_0 and RCx_1</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA RC filter between RCx_0 and RCx_1"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc6ee3dc-edd5-4b30-9fa8-083fcf906ce3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA output low-pass, X7R 10V</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA output low-pass, X7R 10V"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e173f8db-c53d-450a-ac25-6beff995c010</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Required VZERO decoupling per ADuCM355 Rev C p26</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Required VZERO decoupling per ADuCM355 Rev C p26"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f535c383-e8ac-4f4c-a77d-4040242df0ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">VBIAS decoupling</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="VBIAS decoupling"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0026dde-9912-4437-8ebc-7dd2755e8adc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c01bd709-f446-48c6-965b-616c78e1bf1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cadbf360-6581-48b5-824e-172f449586d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb9c6690-d80d-456b-8361-c393549b2dea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Potentiostat loop compensation, CE to CAP_POT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Potentiostat loop compensation, CE to CAP_POT"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>772292b4-2c64-4120-9f5c-9fec0f172eef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA RC filter between RCx_0 and RCx_1</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA RC filter between RCx_0 and RCx_1"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f00f4479-e14e-4f01-813f-c643b275c7b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA output low-pass, X7R 10V</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA output low-pass, X7R 10V"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ecb86746-1788-472b-91d2-ba5bdeddf152</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Required VZERO decoupling per ADuCM355 Rev C p26</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Required VZERO decoupling per ADuCM355 Rev C p26"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d363b90-5e09-4207-a7c7-4f202094eb1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">VBIAS decoupling</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="VBIAS decoupling"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>683e7902-827f-46cf-8fc4-2d6bd649b1c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31e3d8cd-4131-49bd-bebd-e6666f2f20a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb8f8c5d-4897-4c00-a68c-29b87459a27f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>564af94b-c917-44db-abb4-7bf0e64e8ad5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Potentiostat loop compensation, CE to CAP_POT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Potentiostat loop compensation, CE to CAP_POT"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43b5683d-4add-456f-a277-23e575ef90e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA RC filter between RCx_0 and RCx_1</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA RC filter between RCx_0 and RCx_1"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ca34f14-d1e6-43d6-9fb8-f6113bbd98cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA output low-pass, X7R 10V</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA output low-pass, X7R 10V"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc4572c8-0318-47cf-b954-5b13bce420e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Required VZERO decoupling per ADuCM355 Rev C p26</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Required VZERO decoupling per ADuCM355 Rev C p26"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f94c345f-caf7-4930-ae0e-dceb1bb856bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">VBIAS decoupling</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="VBIAS decoupling"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a13b6ed-6f68-4a1d-b1d6-2e8917f841fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04a7d388-8141-40d4-8f9f-50b5dbdd25c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>334ec2a4-c505-42ae-9ad0-8cbefd3abd7d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Tol">C0G 5%</field>
+        <field name="Note">EMC filter, keep at socket</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Tol" value="C0G 5%"/>
+      <property name="Note" value="EMC filter, keep at socket"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f00212a3-3aa2-4a27-ac47-7e183d800403</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Potentiostat loop compensation, CE to CAP_POT</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Potentiostat loop compensation, CE to CAP_POT"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09f4532e-fda4-4028-a7da-374b84d66004</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA RC filter between RCx_0 and RCx_1</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA RC filter between RCx_0 and RCx_1"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b87bea4f-f743-4a93-b682-29984d1e1c1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">LPTIA output low-pass, X7R 10V</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="LPTIA output low-pass, X7R 10V"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b72b910-0224-4861-9df2-5baf9373d498</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Required VZERO decoupling per ADuCM355 Rev C p26</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="Required VZERO decoupling per ADuCM355 Rev C p26"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee6bf9c8-9217-4536-8ad3-7c29ff6318e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">VBIAS decoupling</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="VBIAS decoupling"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f692d259-f29e-4291-8296-b012323ef05b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc4b59ab-b0c5-4fc6-b249-d7ae49728eaa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3db1b3de-9d01-4318-9a43-88dedb87bd73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ad09988-76bf-4255-a74a-87d4ed14a725</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f78bef12-b549-4f9d-b57f-e86eed4ad58c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40fee225-5068-4b4d-a633-b0728418eaf4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2a1929d-a615-4833-aa8f-f572432f8903</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9eb0e40f-66c6-418c-9575-8568fb6a2f97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C40">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cc6d838-205c-4738-9ea0-0131c0198670</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C41">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9bcc31d-f100-48a5-a036-0e96da7216ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C42">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a472edc-e804-4d02-88ae-7a90ab110191</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C43">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0dc9751-4c4f-43d4-aede-f097d5cf90b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C44">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9094e1ba-2541-49e6-9a82-4dccf49127e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C45">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fed7c2e-82fa-4245-a507-43a9c62cff4b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C46">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80721353-05b8-4544-8eac-f790b486e35a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C47">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec5e9c31-fd92-45f6-be6b-8f120bf83b7e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C48">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c7147b8-8632-4e19-9803-5ed84b18599e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C49">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da7dfd4e-acf8-4930-b6e2-6c0bc6494b5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C50">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab46a1fe-e018-4dba-8a54-c17186801ee7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C51">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a8ce125-b2fb-4690-a78d-7d293b5ca2ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C52">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3738dbb3-41f0-4810-988f-0dd6b4a8f106</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C53">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0b09ff4-ad7e-4511-967e-9a141ced2506</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C54">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26956a80-ca52-4937-bd26-10d6067437b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C55">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf8d8c43-120d-4e05-a372-367eeb9d1a1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C56">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4be76229-83f3-409a-9503-58569f7e58cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C57">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U1 AVDD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U1 AVDD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f7b2165-9c52-4a0b-b7f8-3f1f6e164017</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C58">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U1 AVDD_DD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U1 AVDD_DD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c724e47-e65c-45cd-97c7-f9cd42ed1532</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C59">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U1 DVDD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U1 DVDD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39e7d47a-fc35-4d2e-8b70-066ea1ae4c87</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C60">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U1 DVDD_AD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U1 DVDD_AD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3435343-77da-4ce1-a8d5-762e8bd15fce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C61">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U2 AVDD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U2 AVDD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58c4cbc6-a7c1-46fc-a789-c7336fe38ded</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C62">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U2 AVDD_DD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U2 AVDD_DD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b968595-3e72-4c33-907a-58ba48bdaffa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C63">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U2 DVDD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U2 DVDD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce3c22a9-6bf5-42cd-88ac-ae6409799067</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C64">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U2 DVDD_AD local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U2 DVDD_AD local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80976d47-4c36-45e5-b58d-f904744c10c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C65">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">U5 local bypass</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="C" description=""/>
+      <property name="Note" value="U5 local bypass"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0af1d19b-687a-45e7-87bb-4748ff9e0245</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>PESD3V3L2BT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="ESD_ARRAY" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48afa95a-fb72-4a19-ab39-282a4a8efdca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB1">
+      <value>600R@100MHz</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="L_Ferrite" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de0264b9-4238-461a-ae27-8ae4e009859b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>ES1 CH1</value>
+      <footprint>ECGAS:EC_Sense_ES1_3pin_2.54mm</footprint>
+      <description>3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</description>
+      <fields>
+        <field name="MPN">3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)</field>
+        <field name="Note">EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch</field>
+        <field name="Footprint">ECGAS:EC_Sense_ES1_3pin_2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</field>
+      </fields>
+      <libsource lib="ECGAS" part="EC_SENSOR_ES1" description="3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)"/>
+      <property name="MPN" value="3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)"/>
+      <property name="Note" value="EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07ce7094-8ca5-479a-8676-4af8eaf489fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>ES1 CH2</value>
+      <footprint>ECGAS:EC_Sense_ES1_3pin_2.54mm</footprint>
+      <description>3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</description>
+      <fields>
+        <field name="MPN">3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)</field>
+        <field name="Note">EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch</field>
+        <field name="Footprint">ECGAS:EC_Sense_ES1_3pin_2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</field>
+      </fields>
+      <libsource lib="ECGAS" part="EC_SENSOR_ES1" description="3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)"/>
+      <property name="MPN" value="3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)"/>
+      <property name="Note" value="EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e257f881-d8f2-4457-92fa-85ee3b015bb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>ES1 CH3</value>
+      <footprint>ECGAS:EC_Sense_ES1_3pin_2.54mm</footprint>
+      <description>3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</description>
+      <fields>
+        <field name="MPN">3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)</field>
+        <field name="Note">EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch</field>
+        <field name="Footprint">ECGAS:EC_Sense_ES1_3pin_2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</field>
+      </fields>
+      <libsource lib="ECGAS" part="EC_SENSOR_ES1" description="3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)"/>
+      <property name="MPN" value="3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)"/>
+      <property name="Note" value="EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d52099e7-cb7b-4d1b-a41f-932f83b62d94</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>ES1 CH4</value>
+      <footprint>ECGAS:EC_Sense_ES1_3pin_2.54mm</footprint>
+      <description>3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</description>
+      <fields>
+        <field name="MPN">3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)</field>
+        <field name="Note">EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch</field>
+        <field name="Footprint">ECGAS:EC_Sense_ES1_3pin_2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</field>
+      </fields>
+      <libsource lib="ECGAS" part="EC_SENSOR_ES1" description="3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)"/>
+      <property name="MPN" value="3x Mill-Max 0350 series receptacle (0.30-0.51 mm pin)"/>
+      <property name="Note" value="EC Sense ES1 bare sensor, C/S/R, 2.54 mm pitch"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f89cd84d-d587-4c77-9f84-f1894f63d92f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>Host I2C + power</value>
+      <footprint>Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Note">VIN 4.0-5.5 V; nominal 5 V</field>
+        <field name="Footprint">Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="CONN_HOST" description=""/>
+      <property name="Note" value="VIN 4.0-5.5 V; nominal 5 V"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6ab5a92-ad15-4054-b8be-e72d191bae58</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>SWD U1</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="CONN_SWD" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7048cfd2-b18a-4d97-9699-3efc2f4f5af2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>SWD U2</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="CONN_SWD" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4384fa0-76a3-4840-98c6-061b108f995e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J8">
+      <value>UART U1</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="CONN_UART" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c8340e1-559f-4d7f-95ec-3cc92781b5ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J9">
+      <value>UART U2</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="CONN_UART" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf956af7-8633-40dd-818d-44da67a213d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP1">
+      <value>SE-RE short</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Note">Fit only for storage/transport. Remove before measurement.</field>
+        <field name="Footprint">Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="JUMPER" description=""/>
+      <property name="Note" value="Fit only for storage/transport. Remove before measurement."/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>306fcd55-4c59-4a35-83ca-4c4c0b756b83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP2">
+      <value>SE-RE short</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Note">Fit only for storage/transport. Remove before measurement.</field>
+        <field name="Footprint">Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="JUMPER" description=""/>
+      <property name="Note" value="Fit only for storage/transport. Remove before measurement."/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4df307ec-5cc1-4b8c-a8be-76722542764c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP3">
+      <value>SE-RE short</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Note">Fit only for storage/transport. Remove before measurement.</field>
+        <field name="Footprint">Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="JUMPER" description=""/>
+      <property name="Note" value="Fit only for storage/transport. Remove before measurement."/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78f74c99-e0b1-4874-b7a4-4ba5b80601df</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP4">
+      <value>SE-RE short</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <fields>
+        <field name="Note">Fit only for storage/transport. Remove before measurement.</field>
+        <field name="Footprint">Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="JUMPER" description=""/>
+      <property name="Note" value="Fit only for storage/transport. Remove before measurement."/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90648646-00d3-45db-888c-6eca4e1e343f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ce5eed1-c6b6-487e-9685-fc5acf2347ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4876d605-d1af-4e3a-88f5-67f0ed508649</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>418f0975-91aa-4138-bb5c-a6f6355c51bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37d74504-aee7-4751-be28-2d3bceafdd03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>433f1be1-77cb-4be8-8ddf-e9ecd02fef73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f60f5bac-ab1f-4400-9371-13dd1581f6f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e80dd753-5b29-4b64-93f1-720d8a5a3256</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd9a024e-9581-4c12-b60a-3d2ddfbde2c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>200R 0.1% 10ppm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">RCAL between RCAL0 and RCAL1, low tempco</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Note" value="RCAL between RCAL0 and RCAL1, low tempco"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c51245a-d663-4c8a-abee-eb83b16c0dd1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>200R 0.1% 10ppm</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">RCAL between RCAL0 and RCAL1, low tempco</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Note" value="RCAL between RCAL0 and RCAL1, low tempco"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bda880c-66b1-4e79-86b3-93de4394c4da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Note">Single-point analog/digital ground tie, place under U1</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ECGAS" part="R" description=""/>
+      <property name="Note" value="Single-point analog/digital ground tie, place under U1"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4944b2b-26a9-4b8f-835b-8247d8d7cb20</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ADuCM355</value>
+      <footprint>ECGAS:ADuCM355_LGA-72_6x5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</datasheet>
+      <description>Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</description>
+      <fields>
+        <field name="MPN">ADUCM355BCCZ</field>
+        <field name="I2C_ADDR">0x30</field>
+        <field name="Footprint">ECGAS:ADuCM355_LGA-72_6x5mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</field>
+        <field name="Description">Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</field>
+      </fields>
+      <libsource lib="ECGAS" part="ADuCM355" description="Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE"/>
+      <property name="MPN" value="ADUCM355BCCZ"/>
+      <property name="I2C_ADDR" value="0x30"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26496921-b698-46e2-8ccc-d31acb92a3e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B1"/>
+            <pin num="A1"/>
+            <pin num="A3"/>
+            <pin num="A2"/>
+            <pin num="C1"/>
+            <pin num="D1"/>
+            <pin num="D2"/>
+            <pin num="A4"/>
+            <pin num="C2"/>
+            <pin num="B2"/>
+            <pin num="A7"/>
+            <pin num="B11"/>
+            <pin num="A11"/>
+            <pin num="A9"/>
+            <pin num="A10"/>
+            <pin num="C11"/>
+            <pin num="D11"/>
+            <pin num="D10"/>
+            <pin num="A8"/>
+            <pin num="C10"/>
+            <pin num="B10"/>
+            <pin num="A6"/>
+            <pin num="B9"/>
+            <pin num="B8"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="B4"/>
+            <pin num="B3"/>
+            <pin num="A5"/>
+            <pin num="E2"/>
+            <pin num="E11"/>
+            <pin num="B5"/>
+            <pin num="H1"/>
+            <pin num="J1"/>
+            <pin num="E5"/>
+            <pin num="E10"/>
+            <pin num="J5"/>
+            <pin num="H5"/>
+            <pin num="J3"/>
+            <pin num="J2"/>
+            <pin num="H9"/>
+            <pin num="H8"/>
+            <pin num="H7"/>
+            <pin num="H6"/>
+            <pin num="F5"/>
+            <pin num="D5"/>
+            <pin num="E7"/>
+            <pin num="D7"/>
+            <pin num="F6"/>
+            <pin num="D6"/>
+            <pin num="J4"/>
+            <pin num="G10"/>
+            <pin num="H10"/>
+            <pin num="H3"/>
+            <pin num="H4"/>
+            <pin num="J10"/>
+            <pin num="F11"/>
+            <pin num="G2"/>
+            <pin num="J6"/>
+            <pin num="F1"/>
+            <pin num="E1"/>
+            <pin num="J7"/>
+            <pin num="G1"/>
+            <pin num="J9"/>
+            <pin num="J8"/>
+            <pin num="G11"/>
+            <pin num="H11"/>
+            <pin num="J11"/>
+            <pin num="F10"/>
+            <pin num="H2"/>
+            <pin num="F7"/>
+            <pin num="F2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>ADuCM355</value>
+      <footprint>ECGAS:ADuCM355_LGA-72_6x5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</datasheet>
+      <description>Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</description>
+      <fields>
+        <field name="MPN">ADUCM355BCCZ</field>
+        <field name="I2C_ADDR">0x31</field>
+        <field name="Footprint">ECGAS:ADuCM355_LGA-72_6x5mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</field>
+        <field name="Description">Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</field>
+      </fields>
+      <libsource lib="ECGAS" part="ADuCM355" description="Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE"/>
+      <property name="MPN" value="ADUCM355BCCZ"/>
+      <property name="I2C_ADDR" value="0x31"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0a94c0d-fc48-4aa9-a5d9-1f8d679f96a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B1"/>
+            <pin num="A1"/>
+            <pin num="A3"/>
+            <pin num="A2"/>
+            <pin num="C1"/>
+            <pin num="D1"/>
+            <pin num="D2"/>
+            <pin num="A4"/>
+            <pin num="C2"/>
+            <pin num="B2"/>
+            <pin num="A7"/>
+            <pin num="B11"/>
+            <pin num="A11"/>
+            <pin num="A9"/>
+            <pin num="A10"/>
+            <pin num="C11"/>
+            <pin num="D11"/>
+            <pin num="D10"/>
+            <pin num="A8"/>
+            <pin num="C10"/>
+            <pin num="B10"/>
+            <pin num="A6"/>
+            <pin num="B9"/>
+            <pin num="B8"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="B4"/>
+            <pin num="B3"/>
+            <pin num="A5"/>
+            <pin num="E2"/>
+            <pin num="E11"/>
+            <pin num="B5"/>
+            <pin num="H1"/>
+            <pin num="J1"/>
+            <pin num="E5"/>
+            <pin num="E10"/>
+            <pin num="J5"/>
+            <pin num="H5"/>
+            <pin num="J3"/>
+            <pin num="J2"/>
+            <pin num="H9"/>
+            <pin num="H8"/>
+            <pin num="H7"/>
+            <pin num="H6"/>
+            <pin num="F5"/>
+            <pin num="D5"/>
+            <pin num="E7"/>
+            <pin num="D7"/>
+            <pin num="F6"/>
+            <pin num="D6"/>
+            <pin num="J4"/>
+            <pin num="G10"/>
+            <pin num="H10"/>
+            <pin num="H3"/>
+            <pin num="H4"/>
+            <pin num="J10"/>
+            <pin num="F11"/>
+            <pin num="G2"/>
+            <pin num="J6"/>
+            <pin num="F1"/>
+            <pin num="E1"/>
+            <pin num="J7"/>
+            <pin num="G1"/>
+            <pin num="J9"/>
+            <pin num="J8"/>
+            <pin num="G11"/>
+            <pin num="H11"/>
+            <pin num="J11"/>
+            <pin num="F10"/>
+            <pin num="H2"/>
+            <pin num="F7"/>
+            <pin num="F2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>ADP151AUJZ-3.3</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-5</footprint>
+      <description>3.3V 200mA ultra-low-noise LDO</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description">3.3V 200mA ultra-low-noise LDO</field>
+      </fields>
+      <libsource lib="ECGAS" part="ADP151" description="3.3V 200mA ultra-low-noise LDO"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9395e84f-409a-491c-b6d5-1f3f800ab2fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SHT45-AD1B</value>
+      <footprint>Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad</footprint>
+      <description>I2C temperature + RH sensor, addr 0x44</description>
+      <fields>
+        <field name="Footprint">Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad</field>
+        <field name="Datasheet"/>
+        <field name="Description">I2C temperature + RH sensor, addr 0x44</field>
+      </fields>
+      <libsource lib="ECGAS" part="SHT45" description="I2C temperature + RH sensor, addr 0x44"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b204d26b-1ca8-4fbc-96b7-a18c8a1329d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>24AA02E48T-I/SN</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <description>2 kbit I2C EEPROM with EUI-48 node ID, addr 0x50</description>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">2 kbit I2C EEPROM with EUI-48 node ID, addr 0x50</field>
+      </fields>
+      <libsource lib="ECGAS" part="24AA02E48" description="2 kbit I2C EEPROM with EUI-48 node ID, addr 0x50"/>
+      <property name="Sheetname" value="ECSense_4CH_I2C"/>
+      <property name="Sheetfile" value="ECSense_4CH_I2C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1623926e-e714-4915-bc28-6021d57062d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ECGAS" part="24AA02E48">
+      <description>2 kbit I2C EEPROM with EUI-48 node ID, addr 0x50</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">24AA02E48T-I/SN</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">2 kbit I2C EEPROM with EUI-48 node ID, addr 0x50</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC1" type="input"/>
+        <pin num="2" name="NC2" type="input"/>
+        <pin num="3" name="NC3" type="input"/>
+        <pin num="4" name="VSS" type="power_in"/>
+        <pin num="5" name="SDA" type="bidirectional"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="NC7" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="ADP151">
+      <description>3.3V 200mA ultra-low-noise LDO</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADP151AUJZ-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description">3.3V 200mA ultra-low-noise LDO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="ADuCM355">
+      <description>Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADuCM355</field>
+        <field name="Footprint">ECGAS:ADuCM355_LGA-72_6x5mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/aducm355.pdf</field>
+        <field name="Description">Dual potentiostat + 16-bit ADC + Cortex-M3, electrochemical AFE</field>
+        <field name="MPN">ADUCM355BCCZ</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="RE0" type="passive"/>
+        <pin num="A2" name="DE0" type="passive"/>
+        <pin num="A3" name="SE0" type="passive"/>
+        <pin num="A4" name="AIN4_LPF0" type="passive"/>
+        <pin num="A5" name="VREF_1.82V" type="passive"/>
+        <pin num="A6" name="RCAL1" type="passive"/>
+        <pin num="A7" name="RCAL0" type="passive"/>
+        <pin num="A8" name="AIN7_LPF1" type="passive"/>
+        <pin num="A9" name="SE1" type="passive"/>
+        <pin num="A10" name="DE1" type="passive"/>
+        <pin num="A11" name="RE1" type="passive"/>
+        <pin num="B1" name="CE0" type="passive"/>
+        <pin num="B2" name="VZERO0" type="output"/>
+        <pin num="B3" name="AIN6" type="input"/>
+        <pin num="B4" name="AIN5" type="input"/>
+        <pin num="B5" name="AGND_REF" type="passive"/>
+        <pin num="B6" name="AIN2" type="input"/>
+        <pin num="B7" name="AIN3/BUF_VREF1V8" type="input"/>
+        <pin num="B8" name="AIN1" type="input"/>
+        <pin num="B9" name="AIN0" type="input"/>
+        <pin num="B10" name="VZERO1" type="output"/>
+        <pin num="B11" name="CE1" type="passive"/>
+        <pin num="C1" name="CAP_POT0" type="passive"/>
+        <pin num="C2" name="VBIAS0" type="output"/>
+        <pin num="C10" name="VBIAS1" type="output"/>
+        <pin num="C11" name="CAP_POT1" type="passive"/>
+        <pin num="D1" name="RC0_0" type="passive"/>
+        <pin num="D2" name="RC0_1" type="passive"/>
+        <pin num="D5" name="BM/P1.1" type="input"/>
+        <pin num="D6" name="P1.5/SPI1_CS" type="bidirectional"/>
+        <pin num="D7" name="P1.3/SPI1_MOSI" type="bidirectional"/>
+        <pin num="D10" name="RC1_1" type="passive"/>
+        <pin num="D11" name="RC1_0" type="passive"/>
+        <pin num="E1" name="AVDD_REG" type="passive"/>
+        <pin num="E2" name="VREF_2.5V" type="passive"/>
+        <pin num="E5" name="DNC_E5" type="no_connect"/>
+        <pin num="E7" name="P1.2/SPI1_CLK" type="bidirectional"/>
+        <pin num="E10" name="DNC_E10" type="no_connect"/>
+        <pin num="E11" name="ADCVBIAS_CAP" type="passive"/>
+        <pin num="F1" name="DVDD_AD" type="power_in"/>
+        <pin num="F2" name="DGND_AD" type="power_in"/>
+        <pin num="F5" name="P1.0/SYS_WAKE" type="bidirectional"/>
+        <pin num="F6" name="P1.4/SPI1_MISO" type="bidirectional"/>
+        <pin num="F7" name="DGND" type="power_in"/>
+        <pin num="F10" name="AGND" type="power_in"/>
+        <pin num="F11" name="AVDD" type="power_in"/>
+        <pin num="G1" name="DVDD_REG_AD" type="passive"/>
+        <pin num="G2" name="AVDD_DD" type="power_in"/>
+        <pin num="G10" name="GPIO0/PWM0" type="bidirectional"/>
+        <pin num="G11" name="VDCDC_CAP2P" type="passive"/>
+        <pin num="H1" name="XTALI" type="input"/>
+        <pin num="H2" name="AGND_DD" type="power_in"/>
+        <pin num="H3" name="SWCLK" type="input"/>
+        <pin num="H4" name="SWDIO" type="bidirectional"/>
+        <pin num="H5" name="P0.5/I2C_SDA" type="bidirectional"/>
+        <pin num="H6" name="P0.3/SPI0_CS" type="bidirectional"/>
+        <pin num="H7" name="P0.2/SPI0_MISO" type="bidirectional"/>
+        <pin num="H8" name="P0.1/SPI0_MOSI" type="bidirectional"/>
+        <pin num="H9" name="P0.0/SPI0_CLK" type="bidirectional"/>
+        <pin num="H10" name="GPIO1/PWM1" type="bidirectional"/>
+        <pin num="H11" name="VDCDC_CAP2N" type="passive"/>
+        <pin num="J1" name="XTALO" type="output"/>
+        <pin num="J2" name="P0.11/UART_SIN" type="input"/>
+        <pin num="J3" name="P0.10/UART_SOUT" type="output"/>
+        <pin num="J4" name="P2.4" type="bidirectional"/>
+        <pin num="J5" name="P0.4/I2C_SCL" type="bidirectional"/>
+        <pin num="J6" name="DVDD" type="power_in"/>
+        <pin num="J7" name="DVDD_REG" type="passive"/>
+        <pin num="J8" name="VDCDC_CAP1N" type="passive"/>
+        <pin num="J9" name="VDCDC_CAP1P" type="passive"/>
+        <pin num="J10" name="~{RESET}" type="input"/>
+        <pin num="J11" name="VDCDC_CAPOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="CONN_HOST">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Host I2C</field>
+        <field name="Footprint">Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SDA" type="passive"/>
+        <pin num="4" name="SCL" type="passive"/>
+        <pin num="5" name="~{ALERT}" type="passive"/>
+        <pin num="6" name="~{RESET}" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="CONN_SWD">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SWD</field>
+        <field name="Footprint">Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VTREF" type="passive"/>
+        <pin num="2" name="SWDIO" type="passive"/>
+        <pin num="3" name="SWCLK" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="~{RESET}" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="CONN_UART">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">UART/BSL</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="RX" type="passive"/>
+        <pin num="3" name="TX" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="EC_SENSOR_ES1">
+      <description>3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">ES1 socket</field>
+        <field name="Footprint">ECGAS:EC_Sense_ES1_3pin_2.54mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">3-pin socket for EC Sense ES1 bare electrochemical sensor (C/S/R)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="R" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="ESD_ARRAY">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">PESD3V3L2BT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IO1" type="passive"/>
+        <pin num="2" name="IO2" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="JUMPER">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Solder jumper</field>
+        <field name="Footprint">Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="L_Ferrite">
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite</field>
+        <field name="Footprint">Inductor_SMD:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECGAS" part="SHT45">
+      <description>I2C temperature + RH sensor, addr 0x44</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SHT45-AD1B</field>
+        <field name="Footprint">Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad</field>
+        <field name="Datasheet"/>
+        <field name="Description">I2C temperature + RH sensor, addr 0x44</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="bidirectional"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ECGAS">
+      <uri>${KIPRJMOD}/ECGAS.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Default">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="C56" pin="1" pintype="passive"/>
+      <node ref="C58" pin="1" pintype="passive"/>
+      <node ref="C59" pin="1" pintype="passive"/>
+      <node ref="C60" pin="1" pintype="passive"/>
+      <node ref="C62" pin="1" pintype="passive"/>
+      <node ref="C63" pin="1" pintype="passive"/>
+      <node ref="C64" pin="1" pintype="passive"/>
+      <node ref="C65" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="VTREF_1" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="VTREF_1" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="3V3_1" pintype="passive"/>
+      <node ref="J9" pin="1" pinfunction="3V3_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="F1" pinfunction="DVDD_AD_F1" pintype="power_in"/>
+      <node ref="U1" pin="G2" pinfunction="AVDD_DD_G2" pintype="power_in"/>
+      <node ref="U1" pin="J6" pinfunction="DVDD_J6" pintype="power_in"/>
+      <node ref="U2" pin="F1" pinfunction="DVDD_AD_F1" pintype="power_in"/>
+      <node ref="U2" pin="G2" pinfunction="AVDD_DD_G2" pintype="power_in"/>
+      <node ref="U2" pin="J6" pinfunction="DVDD_J6" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="VOUT_5" pintype="power_out"/>
+      <node ref="U4" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+    </net>
+    <net code="2" name="+3V3A" class="Default">
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="C57" pin="1" pintype="passive"/>
+      <node ref="C61" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="F11" pinfunction="AVDD_F11" pintype="power_in"/>
+      <node ref="U2" pin="F11" pinfunction="AVDD_F11" pintype="power_in"/>
+    </net>
+    <net code="3" name="/CH1_CAPPOT" class="Default">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="C1" pinfunction="CAP_POT0_C1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CH1_CE" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="U1" pin="B1" pinfunction="CE0_B1" pintype="passive"/>
+    </net>
+    <net code="5" name="/CH1_LPF" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="A4" pinfunction="AIN4_LPF0_A4" pintype="passive"/>
+    </net>
+    <net code="6" name="/CH1_RC0" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="D1" pinfunction="RC0_0_D1" pintype="passive"/>
+    </net>
+    <net code="7" name="/CH1_RC1" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="D2" pinfunction="RC0_1_D2" pintype="passive"/>
+    </net>
+    <net code="8" name="/CH1_RE" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="R_3" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="U1" pin="A1" pinfunction="RE0_A1" pintype="passive"/>
+    </net>
+    <net code="9" name="/CH1_SE" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="A3" pinfunction="SE0_A3" pintype="passive"/>
+    </net>
+    <net code="10" name="/CH1_VBIAS" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="C2" pinfunction="VBIAS0_C2" pintype="output"/>
+    </net>
+    <net code="11" name="/CH1_VZERO" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="B2" pinfunction="VZERO0_B2" pintype="output"/>
+    </net>
+    <net code="12" name="/CH2_CAPPOT" class="Default">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="U1" pin="C11" pinfunction="CAP_POT1_C11" pintype="passive"/>
+    </net>
+    <net code="13" name="/CH2_CE" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="U1" pin="B11" pinfunction="CE1_B11" pintype="passive"/>
+    </net>
+    <net code="14" name="/CH2_LPF" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="U1" pin="A8" pinfunction="AIN7_LPF1_A8" pintype="passive"/>
+    </net>
+    <net code="15" name="/CH2_RC0" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="D11" pinfunction="RC1_0_D11" pintype="passive"/>
+    </net>
+    <net code="16" name="/CH2_RC1" class="Default">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="U1" pin="D10" pinfunction="RC1_1_D10" pintype="passive"/>
+    </net>
+    <net code="17" name="/CH2_RE" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="R_3" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="U1" pin="A11" pinfunction="RE1_A11" pintype="passive"/>
+    </net>
+    <net code="18" name="/CH2_SE" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="JP2" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U1" pin="A9" pinfunction="SE1_A9" pintype="passive"/>
+    </net>
+    <net code="19" name="/CH2_VBIAS" class="Default">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="U1" pin="C10" pinfunction="VBIAS1_C10" pintype="output"/>
+    </net>
+    <net code="20" name="/CH2_VZERO" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="B10" pinfunction="VZERO1_B10" pintype="output"/>
+    </net>
+    <net code="21" name="/CH3_CAPPOT" class="Default">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="U2" pin="C1" pinfunction="CAP_POT0_C1" pintype="passive"/>
+    </net>
+    <net code="22" name="/CH3_CE" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="U2" pin="B1" pinfunction="CE0_B1" pintype="passive"/>
+    </net>
+    <net code="23" name="/CH3_LPF" class="Default">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="U2" pin="A4" pinfunction="AIN4_LPF0_A4" pintype="passive"/>
+    </net>
+    <net code="24" name="/CH3_RC0" class="Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U2" pin="D1" pinfunction="RC0_0_D1" pintype="passive"/>
+    </net>
+    <net code="25" name="/CH3_RC1" class="Default">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="U2" pin="D2" pinfunction="RC0_1_D2" pintype="passive"/>
+    </net>
+    <net code="26" name="/CH3_RE" class="Default">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="R_3" pintype="passive"/>
+      <node ref="JP3" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="U2" pin="A1" pinfunction="RE0_A1" pintype="passive"/>
+    </net>
+    <net code="27" name="/CH3_SE" class="Default">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="JP3" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U2" pin="A3" pinfunction="SE0_A3" pintype="passive"/>
+    </net>
+    <net code="28" name="/CH3_VBIAS" class="Default">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="U2" pin="C2" pinfunction="VBIAS0_C2" pintype="output"/>
+    </net>
+    <net code="29" name="/CH3_VZERO" class="Default">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="U2" pin="B2" pinfunction="VZERO0_B2" pintype="output"/>
+    </net>
+    <net code="30" name="/CH4_CAPPOT" class="Default">
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="U2" pin="C11" pinfunction="CAP_POT1_C11" pintype="passive"/>
+    </net>
+    <net code="31" name="/CH4_CE" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="U2" pin="B11" pinfunction="CE1_B11" pintype="passive"/>
+    </net>
+    <net code="32" name="/CH4_LPF" class="Default">
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="U2" pin="A8" pinfunction="AIN7_LPF1_A8" pintype="passive"/>
+    </net>
+    <net code="33" name="/CH4_RC0" class="Default">
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="U2" pin="D11" pinfunction="RC1_0_D11" pintype="passive"/>
+    </net>
+    <net code="34" name="/CH4_RC1" class="Default">
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="U2" pin="D10" pinfunction="RC1_1_D10" pintype="passive"/>
+    </net>
+    <net code="35" name="/CH4_RE" class="Default">
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="R_3" pintype="passive"/>
+      <node ref="JP4" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="U2" pin="A11" pinfunction="RE1_A11" pintype="passive"/>
+    </net>
+    <net code="36" name="/CH4_SE" class="Default">
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="JP4" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U2" pin="A9" pinfunction="SE1_A9" pintype="passive"/>
+    </net>
+    <net code="37" name="/CH4_VBIAS" class="Default">
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="U2" pin="C10" pinfunction="VBIAS1_C10" pintype="output"/>
+    </net>
+    <net code="38" name="/CH4_VZERO" class="Default">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="U2" pin="B10" pinfunction="VZERO1_B10" pintype="output"/>
+    </net>
+    <net code="39" name="/SCL" class="Default">
+      <node ref="D1" pin="2" pinfunction="IO2_2" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="SCL_4" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="J5" pinfunction="P0.4/I2C_SCL_J5" pintype="bidirectional"/>
+      <node ref="U2" pin="J5" pinfunction="P0.4/I2C_SCL_J5" pintype="bidirectional"/>
+      <node ref="U4" pin="2" pinfunction="SCL_2" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="SCL_6" pintype="input"/>
+    </net>
+    <net code="40" name="/SDA" class="Default">
+      <node ref="D1" pin="1" pinfunction="IO1_1" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="SDA_3" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="H5" pinfunction="P0.5/I2C_SDA_H5" pintype="bidirectional"/>
+      <node ref="U2" pin="H5" pinfunction="P0.5/I2C_SDA_H5" pintype="bidirectional"/>
+      <node ref="U4" pin="1" pinfunction="SDA_1" pintype="bidirectional"/>
+      <node ref="U5" pin="5" pinfunction="SDA_5" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="/U1_ADCVBIAS" class="Default">
+      <node ref="C40" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E11" pinfunction="ADCVBIAS_CAP_E11" pintype="passive"/>
+    </net>
+    <net code="42" name="/U1_ADDR" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="J4" pinfunction="P2.4_J4" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/U1_AVDD_REG" class="Default">
+      <node ref="C41" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E1" pinfunction="AVDD_REG_E1" pintype="passive"/>
+    </net>
+    <net code="44" name="/U1_BM" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="D5" pinfunction="BM/P1.1_D5" pintype="input"/>
+    </net>
+    <net code="45" name="/U1_DVDD_REG" class="Default">
+      <node ref="C42" pin="1" pintype="passive"/>
+      <node ref="U1" pin="J7" pinfunction="DVDD_REG_J7" pintype="passive"/>
+    </net>
+    <net code="46" name="/U1_DVDD_REG_AD" class="Default">
+      <node ref="C43" pin="1" pintype="passive"/>
+      <node ref="U1" pin="G1" pinfunction="DVDD_REG_AD_G1" pintype="passive"/>
+    </net>
+    <net code="47" name="/U1_RCAL0" class="Default">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="A7" pinfunction="RCAL0_A7" pintype="passive"/>
+    </net>
+    <net code="48" name="/U1_RCAL1" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="A6" pinfunction="RCAL1_A6" pintype="passive"/>
+    </net>
+    <net code="49" name="/U1_RX" class="Default">
+      <node ref="J8" pin="3" pinfunction="TX_3" pintype="passive"/>
+      <node ref="U1" pin="J2" pinfunction="P0.11/UART_SIN_J2" pintype="input"/>
+    </net>
+    <net code="50" name="/U1_SWCLK" class="Default">
+      <node ref="J6" pin="3" pinfunction="SWCLK_3" pintype="passive"/>
+      <node ref="U1" pin="H3" pinfunction="SWCLK_H3" pintype="input"/>
+    </net>
+    <net code="51" name="/U1_SWDIO" class="Default">
+      <node ref="J6" pin="2" pinfunction="SWDIO_2" pintype="passive"/>
+      <node ref="U1" pin="H4" pinfunction="SWDIO_H4" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="/U1_TX" class="Default">
+      <node ref="J8" pin="2" pinfunction="RX_2" pintype="passive"/>
+      <node ref="U1" pin="J3" pinfunction="P0.10/UART_SOUT_J3" pintype="output"/>
+    </net>
+    <net code="53" name="/U1_VDCDC_CAP1N" class="Default">
+      <node ref="C52" pin="2" pintype="passive"/>
+      <node ref="U1" pin="J8" pinfunction="VDCDC_CAP1N_J8" pintype="passive"/>
+    </net>
+    <net code="54" name="/U1_VDCDC_CAP1P" class="Default">
+      <node ref="C52" pin="1" pintype="passive"/>
+      <node ref="U1" pin="J9" pinfunction="VDCDC_CAP1P_J9" pintype="passive"/>
+    </net>
+    <net code="55" name="/U1_VDCDC_CAP2N" class="Default">
+      <node ref="C53" pin="2" pintype="passive"/>
+      <node ref="U1" pin="H11" pinfunction="VDCDC_CAP2N_H11" pintype="passive"/>
+    </net>
+    <net code="56" name="/U1_VDCDC_CAP2P" class="Default">
+      <node ref="C53" pin="1" pintype="passive"/>
+      <node ref="U1" pin="G11" pinfunction="VDCDC_CAP2P_G11" pintype="passive"/>
+    </net>
+    <net code="57" name="/U1_VDCDC_CAPOUT" class="Default">
+      <node ref="C44" pin="1" pintype="passive"/>
+      <node ref="U1" pin="J11" pinfunction="VDCDC_CAPOUT_J11" pintype="passive"/>
+    </net>
+    <net code="58" name="/U1_VREF25" class="Default">
+      <node ref="C39" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E2" pinfunction="VREF_2.5V_E2" pintype="passive"/>
+    </net>
+    <net code="59" name="/U1_VREF182" class="Default">
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="U1" pin="A5" pinfunction="VREF_1.82V_A5" pintype="passive"/>
+    </net>
+    <net code="60" name="/U2_ADCVBIAS" class="Default">
+      <node ref="C47" pin="1" pintype="passive"/>
+      <node ref="U2" pin="E11" pinfunction="ADCVBIAS_CAP_E11" pintype="passive"/>
+    </net>
+    <net code="61" name="/U2_ADDR" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="J4" pinfunction="P2.4_J4" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="/U2_AVDD_REG" class="Default">
+      <node ref="C48" pin="1" pintype="passive"/>
+      <node ref="U2" pin="E1" pinfunction="AVDD_REG_E1" pintype="passive"/>
+    </net>
+    <net code="63" name="/U2_BM" class="Default">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="D5" pinfunction="BM/P1.1_D5" pintype="input"/>
+    </net>
+    <net code="64" name="/U2_DVDD_REG" class="Default">
+      <node ref="C49" pin="1" pintype="passive"/>
+      <node ref="U2" pin="J7" pinfunction="DVDD_REG_J7" pintype="passive"/>
+    </net>
+    <net code="65" name="/U2_DVDD_REG_AD" class="Default">
+      <node ref="C50" pin="1" pintype="passive"/>
+      <node ref="U2" pin="G1" pinfunction="DVDD_REG_AD_G1" pintype="passive"/>
+    </net>
+    <net code="66" name="/U2_RCAL0" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U2" pin="A7" pinfunction="RCAL0_A7" pintype="passive"/>
+    </net>
+    <net code="67" name="/U2_RCAL1" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U2" pin="A6" pinfunction="RCAL1_A6" pintype="passive"/>
+    </net>
+    <net code="68" name="/U2_RX" class="Default">
+      <node ref="J9" pin="3" pinfunction="TX_3" pintype="passive"/>
+      <node ref="U2" pin="J2" pinfunction="P0.11/UART_SIN_J2" pintype="input"/>
+    </net>
+    <net code="69" name="/U2_SWCLK" class="Default">
+      <node ref="J7" pin="3" pinfunction="SWCLK_3" pintype="passive"/>
+      <node ref="U2" pin="H3" pinfunction="SWCLK_H3" pintype="input"/>
+    </net>
+    <net code="70" name="/U2_SWDIO" class="Default">
+      <node ref="J7" pin="2" pinfunction="SWDIO_2" pintype="passive"/>
+      <node ref="U2" pin="H4" pinfunction="SWDIO_H4" pintype="bidirectional"/>
+    </net>
+    <net code="71" name="/U2_TX" class="Default">
+      <node ref="J9" pin="2" pinfunction="RX_2" pintype="passive"/>
+      <node ref="U2" pin="J3" pinfunction="P0.10/UART_SOUT_J3" pintype="output"/>
+    </net>
+    <net code="72" name="/U2_VDCDC_CAP1N" class="Default">
+      <node ref="C54" pin="2" pintype="passive"/>
+      <node ref="U2" pin="J8" pinfunction="VDCDC_CAP1N_J8" pintype="passive"/>
+    </net>
+    <net code="73" name="/U2_VDCDC_CAP1P" class="Default">
+      <node ref="C54" pin="1" pintype="passive"/>
+      <node ref="U2" pin="J9" pinfunction="VDCDC_CAP1P_J9" pintype="passive"/>
+    </net>
+    <net code="74" name="/U2_VDCDC_CAP2N" class="Default">
+      <node ref="C55" pin="2" pintype="passive"/>
+      <node ref="U2" pin="H11" pinfunction="VDCDC_CAP2N_H11" pintype="passive"/>
+    </net>
+    <net code="75" name="/U2_VDCDC_CAP2P" class="Default">
+      <node ref="C55" pin="1" pintype="passive"/>
+      <node ref="U2" pin="G11" pinfunction="VDCDC_CAP2P_G11" pintype="passive"/>
+    </net>
+    <net code="76" name="/U2_VDCDC_CAPOUT" class="Default">
+      <node ref="C51" pin="1" pintype="passive"/>
+      <node ref="U2" pin="J11" pinfunction="VDCDC_CAPOUT_J11" pintype="passive"/>
+    </net>
+    <net code="77" name="/U2_VREF25" class="Default">
+      <node ref="C46" pin="1" pintype="passive"/>
+      <node ref="U2" pin="E2" pinfunction="VREF_2.5V_E2" pintype="passive"/>
+    </net>
+    <net code="78" name="/U2_VREF182" class="Default">
+      <node ref="C45" pin="1" pintype="passive"/>
+      <node ref="U2" pin="A5" pinfunction="VREF_1.82V_A5" pintype="passive"/>
+    </net>
+    <net code="79" name="/~{ALERT}" class="Default">
+      <node ref="J5" pin="5" pinfunction="~{ALERT}_5" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="H10" pinfunction="GPIO1/PWM1_H10" pintype="bidirectional"/>
+      <node ref="U2" pin="H10" pinfunction="GPIO1/PWM1_H10" pintype="bidirectional"/>
+    </net>
+    <net code="80" name="/~{RESET}" class="Default">
+      <node ref="J5" pin="6" pinfunction="~{RESET}_6" pintype="passive"/>
+      <node ref="J6" pin="5" pinfunction="~{RESET}_5" pintype="passive"/>
+      <node ref="J7" pin="5" pinfunction="~{RESET}_5" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="J10" pinfunction="~{RESET}_J10" pintype="input"/>
+      <node ref="U2" pin="J10" pinfunction="~{RESET}_J10" pintype="input"/>
+    </net>
+    <net code="81" name="AGND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="C40" pin="2" pintype="passive"/>
+      <node ref="C41" pin="2" pintype="passive"/>
+      <node ref="C45" pin="2" pintype="passive"/>
+      <node ref="C46" pin="2" pintype="passive"/>
+      <node ref="C47" pin="2" pintype="passive"/>
+      <node ref="C48" pin="2" pintype="passive"/>
+      <node ref="C57" pin="2" pintype="passive"/>
+      <node ref="C58" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C61" pin="2" pintype="passive"/>
+      <node ref="C62" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="B5" pinfunction="AGND_REF_B5" pintype="passive"/>
+      <node ref="U1" pin="F10" pinfunction="AGND_F10" pintype="power_in"/>
+      <node ref="U1" pin="H2" pinfunction="AGND_DD_H2" pintype="power_in"/>
+      <node ref="U2" pin="B5" pinfunction="AGND_REF_B5" pintype="passive"/>
+      <node ref="U2" pin="F10" pinfunction="AGND_F10" pintype="power_in"/>
+      <node ref="U2" pin="H2" pinfunction="AGND_DD_H2" pintype="power_in"/>
+    </net>
+    <net code="82" name="GND" class="Default">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C42" pin="2" pintype="passive"/>
+      <node ref="C43" pin="2" pintype="passive"/>
+      <node ref="C44" pin="2" pintype="passive"/>
+      <node ref="C49" pin="2" pintype="passive"/>
+      <node ref="C50" pin="2" pintype="passive"/>
+      <node ref="C51" pin="2" pintype="passive"/>
+      <node ref="C56" pin="2" pintype="passive"/>
+      <node ref="C59" pin="2" pintype="passive"/>
+      <node ref="C60" pin="2" pintype="passive"/>
+      <node ref="C63" pin="2" pintype="passive"/>
+      <node ref="C64" pin="2" pintype="passive"/>
+      <node ref="C65" pin="2" pintype="passive"/>
+      <node ref="D1" pin="3" pinfunction="GND_3" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J7" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J8" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J9" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="F2" pinfunction="DGND_AD_F2" pintype="power_in"/>
+      <node ref="U1" pin="F7" pinfunction="DGND_F7" pintype="power_in"/>
+      <node ref="U2" pin="F2" pinfunction="DGND_AD_F2" pintype="power_in"/>
+      <node ref="U2" pin="F7" pinfunction="DGND_F7" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U4" pin="4" pinfunction="VSS_4" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="VSS_4" pintype="power_in"/>
+    </net>
+    <net code="83" name="VIN" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="VIN_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="VIN_1" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="84" name="unconnected-(U1-AIN0-PadB9)" class="Default">
+      <node ref="U1" pin="B9" pinfunction="AIN0_B9" pintype="input+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U1-AIN1-PadB8)" class="Default">
+      <node ref="U1" pin="B8" pinfunction="AIN1_B8" pintype="input+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U1-AIN2-PadB6)" class="Default">
+      <node ref="U1" pin="B6" pinfunction="AIN2_B6" pintype="input+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U1-AIN3/BUF_VREF1V8-PadB7)" class="Default">
+      <node ref="U1" pin="B7" pinfunction="AIN3/BUF_VREF1V8_B7" pintype="input+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U1-AIN5-PadB4)" class="Default">
+      <node ref="U1" pin="B4" pinfunction="AIN5_B4" pintype="input+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U1-AIN6-PadB3)" class="Default">
+      <node ref="U1" pin="B3" pinfunction="AIN6_B3" pintype="input+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U1-DE0-PadA2)" class="Default">
+      <node ref="U1" pin="A2" pinfunction="DE0_A2" pintype="passive+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U1-DE1-PadA10)" class="Default">
+      <node ref="U1" pin="A10" pinfunction="DE1_A10" pintype="passive+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U1-DNC_E5-PadE5)" class="Default">
+      <node ref="U1" pin="E5" pinfunction="DNC_E5_E5" pintype="no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(U1-DNC_E10-PadE10)" class="Default">
+      <node ref="U1" pin="E10" pinfunction="DNC_E10_E10" pintype="no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(U1-GPIO0/PWM0-PadG10)" class="Default">
+      <node ref="U1" pin="G10" pinfunction="GPIO0/PWM0_G10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(U1-P0.0/SPI0_CLK-PadH9)" class="Default">
+      <node ref="U1" pin="H9" pinfunction="P0.0/SPI0_CLK_H9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(U1-P0.1/SPI0_MOSI-PadH8)" class="Default">
+      <node ref="U1" pin="H8" pinfunction="P0.1/SPI0_MOSI_H8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(U1-P0.2/SPI0_MISO-PadH7)" class="Default">
+      <node ref="U1" pin="H7" pinfunction="P0.2/SPI0_MISO_H7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(U1-P0.3/SPI0_CS-PadH6)" class="Default">
+      <node ref="U1" pin="H6" pinfunction="P0.3/SPI0_CS_H6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(U1-P1.0/SYS_WAKE-PadF5)" class="Default">
+      <node ref="U1" pin="F5" pinfunction="P1.0/SYS_WAKE_F5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(U1-P1.2/SPI1_CLK-PadE7)" class="Default">
+      <node ref="U1" pin="E7" pinfunction="P1.2/SPI1_CLK_E7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(U1-P1.3/SPI1_MOSI-PadD7)" class="Default">
+      <node ref="U1" pin="D7" pinfunction="P1.3/SPI1_MOSI_D7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(U1-P1.4/SPI1_MISO-PadF6)" class="Default">
+      <node ref="U1" pin="F6" pinfunction="P1.4/SPI1_MISO_F6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(U1-P1.5/SPI1_CS-PadD6)" class="Default">
+      <node ref="U1" pin="D6" pinfunction="P1.5/SPI1_CS_D6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(U1-XTALI-PadH1)" class="Default">
+      <node ref="U1" pin="H1" pinfunction="XTALI_H1" pintype="input+no_connect"/>
+    </net>
+    <net code="105" name="unconnected-(U1-XTALO-PadJ1)" class="Default">
+      <node ref="U1" pin="J1" pinfunction="XTALO_J1" pintype="output+no_connect"/>
+    </net>
+    <net code="106" name="unconnected-(U2-AIN0-PadB9)" class="Default">
+      <node ref="U2" pin="B9" pinfunction="AIN0_B9" pintype="input+no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(U2-AIN1-PadB8)" class="Default">
+      <node ref="U2" pin="B8" pinfunction="AIN1_B8" pintype="input+no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U2-AIN2-PadB6)" class="Default">
+      <node ref="U2" pin="B6" pinfunction="AIN2_B6" pintype="input+no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U2-AIN3/BUF_VREF1V8-PadB7)" class="Default">
+      <node ref="U2" pin="B7" pinfunction="AIN3/BUF_VREF1V8_B7" pintype="input+no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U2-AIN5-PadB4)" class="Default">
+      <node ref="U2" pin="B4" pinfunction="AIN5_B4" pintype="input+no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U2-AIN6-PadB3)" class="Default">
+      <node ref="U2" pin="B3" pinfunction="AIN6_B3" pintype="input+no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U2-DE0-PadA2)" class="Default">
+      <node ref="U2" pin="A2" pinfunction="DE0_A2" pintype="passive+no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U2-DE1-PadA10)" class="Default">
+      <node ref="U2" pin="A10" pinfunction="DE1_A10" pintype="passive+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U2-DNC_E5-PadE5)" class="Default">
+      <node ref="U2" pin="E5" pinfunction="DNC_E5_E5" pintype="no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U2-DNC_E10-PadE10)" class="Default">
+      <node ref="U2" pin="E10" pinfunction="DNC_E10_E10" pintype="no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U2-GPIO0/PWM0-PadG10)" class="Default">
+      <node ref="U2" pin="G10" pinfunction="GPIO0/PWM0_G10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U2-P0.0/SPI0_CLK-PadH9)" class="Default">
+      <node ref="U2" pin="H9" pinfunction="P0.0/SPI0_CLK_H9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U2-P0.1/SPI0_MOSI-PadH8)" class="Default">
+      <node ref="U2" pin="H8" pinfunction="P0.1/SPI0_MOSI_H8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U2-P0.2/SPI0_MISO-PadH7)" class="Default">
+      <node ref="U2" pin="H7" pinfunction="P0.2/SPI0_MISO_H7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U2-P0.3/SPI0_CS-PadH6)" class="Default">
+      <node ref="U2" pin="H6" pinfunction="P0.3/SPI0_CS_H6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U2-P1.0/SYS_WAKE-PadF5)" class="Default">
+      <node ref="U2" pin="F5" pinfunction="P1.0/SYS_WAKE_F5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U2-P1.2/SPI1_CLK-PadE7)" class="Default">
+      <node ref="U2" pin="E7" pinfunction="P1.2/SPI1_CLK_E7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U2-P1.3/SPI1_MOSI-PadD7)" class="Default">
+      <node ref="U2" pin="D7" pinfunction="P1.3/SPI1_MOSI_D7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U2-P1.4/SPI1_MISO-PadF6)" class="Default">
+      <node ref="U2" pin="F6" pinfunction="P1.4/SPI1_MISO_F6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U2-P1.5/SPI1_CS-PadD6)" class="Default">
+      <node ref="U2" pin="D6" pinfunction="P1.5/SPI1_CS_D6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U2-XTALI-PadH1)" class="Default">
+      <node ref="U2" pin="H1" pinfunction="XTALI_H1" pintype="input+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U2-XTALO-PadJ1)" class="Default">
+      <node ref="U2" pin="J1" pinfunction="XTALO_J1" pintype="output+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U3-NC-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U5-NC1-Pad1)" class="Default">
+      <node ref="U5" pin="1" pinfunction="NC1_1" pintype="input+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(U5-NC2-Pad2)" class="Default">
+      <node ref="U5" pin="2" pinfunction="NC2_2" pintype="input+no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(U5-NC3-Pad3)" class="Default">
+      <node ref="U5" pin="3" pinfunction="NC3_3" pintype="input+no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(U5-NC7-Pad7)" class="Default">
+      <node ref="U5" pin="7" pinfunction="NC7_7" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
